@@ -1,0 +1,53 @@
+{
+  "name": "t2api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "dependencies": {
+    "form-data": "^2.3.2",
+    "iconv-lite": "^0.4.19",
+    "js-sha256": "^0.9.0",
+    "lodash": "4.x.x",
+    "mongodb": "^3.0.7",
+    "mysql": "^2.15.0",
+    "node-csv": "^0.1.2",
+    "node-fetch": "^2.1.2",
+    "strapi": "3.0.0-alpha.11.2",
+    "strapi-mongoose": "3.0.0-alpha.11.2"
+  },
+  "author": {
+    "name": "karol",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "karol",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "uuid": "fae93c3b-fb14-4b09-8d18-2bd77ebd1f69"
+  },
+  "engines": {
+    "node": ">= 7.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT"
+}

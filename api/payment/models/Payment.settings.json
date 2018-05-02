@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "payment",
+  "info": {
+    "name": "payment",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "operationDate": {
+      "type": "date",
+      "multiple": false
+    },
+    "paymentGroup": {
+      "model": "group",
+      "via": "groupPayments"
+    },
+    "paymentStudent": {
+      "model": "student",
+      "via": "studentPayments"
+    },
+    "paymentBankTransfer": {
+      "model": "banktransfer",
+      "via": "bankTransferPayments"
+    }
+  }
+}

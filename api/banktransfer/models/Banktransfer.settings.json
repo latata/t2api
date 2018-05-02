@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "banktransfer",
+  "info": {
+    "name": "banktransfer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "postDate": {
+      "type": "date",
+      "multiple": false
+    },
+    "operationDate": {
+      "type": "date",
+      "multiple": false
+    },
+    "amount": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "title": {
+      "type": "string",
+      "multiple": false
+    },
+    "senderData": {
+      "type": "string",
+      "multiple": false
+    },
+    "bankTransferPayments": {
+      "collection": "payment",
+      "via": "paymentBankTransfer"
+    },
+    "senderAccountNumber": {
+      "type": "string",
+      "multiple": false
+    },
+    "transactionType": {
+      "type": "string",
+      "multiple": false
+    },
+    "hash": {
+      "type": "string",
+      "multiple": false
+    },
+    "assigned": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "ignored": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "company": {
+      "type": "string",
+      "multiple": false
+    }
+  }
+}

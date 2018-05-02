@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/banktransfer",
+      "handler": "Banktransfer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/banktransfer/:_id",
+      "handler": "Banktransfer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/banktransfer",
+      "handler": "Banktransfer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/banktransfer/:_id",
+      "handler": "Banktransfer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/banktransfer/:_id",
+      "handler": "Banktransfer.ignore",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connectbanktransfers/:company",
+      "handler": "Banktransfer.connect",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

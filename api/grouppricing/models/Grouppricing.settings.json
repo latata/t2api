@@ -1,0 +1,77 @@
+{
+  "connection": "default",
+  "collectionName": "grouppricing",
+  "info": {
+    "name": "grouppricing",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "r9oct": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9nov": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9dec": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9jan": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9feb": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9mar": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9apr": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r9may": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r4oct": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r4nov": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r4jan": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r4mar": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r2oct": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r2jan": {
+      "type": "decimal",
+      "multiple": false
+    },
+    "r1oct": {
+      "type": "decimal",
+      "multiple": false
+    }
+  }
+}

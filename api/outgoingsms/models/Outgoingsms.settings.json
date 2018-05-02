@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "outgoingsms",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "multiple": false
+    },
+    "phoneNo": {
+      "type": "string",
+      "multiple": false
+    },
+    "outgoingSmsStudent": {
+      "model": "student",
+      "via": "outgoingSmses"
+    },
+    "smsId": {
+      "type": "string",
+      "multiple": false
+    },
+    "smsData": {
+      "type": "json",
+      "multiple": false
+    }
+  }
+}

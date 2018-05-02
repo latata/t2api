@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "group",
+  "info": {
+    "name": "group",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "multiple": false
+    },
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "year": {
+      "type": "string",
+      "multiple": false
+    },
+    "students": {
+      "collection": "student",
+      "via": "groups"
+    },
+    "groupPayments": {
+      "collection": "payment",
+      "via": "paymentGroup"
+    },
+    "pricing": {
+      "type": "json",
+      "multiple": false
+    },
+    "company": {
+      "type": "string",
+      "multiple": false
+    },
+    "oldId": {
+      "type": "integer",
+      "multiple": false
+    },
+    "deleted": {
+      "type": "boolean",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "connection": "default",
+  "collectionName": "student",
+  "info": {
+    "name": "student",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "multiple": false
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "multiple": false
+    },
+    "phoneNo": {
+      "type": "string",
+      "multiple": false
+    },
+    "phoneNo2": {
+      "type": "string",
+      "multiple": false
+    },
+    "street": {
+      "type": "string",
+      "multiple": false
+    },
+    "postalCode": {
+      "type": "string",
+      "multiple": false
+    },
+    "city": {
+      "type": "string",
+      "multiple": false
+    },
+    "email": {
+      "type": "email",
+      "multiple": false
+    },
+    "className": {
+      "type": "string",
+      "multiple": false
+    },
+    "birthDate": {
+      "type": "date",
+      "multiple": false
+    },
+    "groups": {
+      "collection": "group",
+      "via": "students",
+      "dominant": true
+    },
+    "deleted": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "studentPayments": {
+      "collection": "payment",
+      "via": "paymentStudent"
+    },
+    "accountNumbers": {
+      "type": "string",
+      "multiple": false
+    },
+    "groupsOptions": {
+      "type": "json",
+      "multiple": false
+    },
+    "outgoingSmses": {
+      "collection": "outgoingsms",
+      "via": "outgoingSmsStudent"
+    }
+  }
+}

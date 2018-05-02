@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/grouppricing",
+      "handler": "Grouppricing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/grouppricing/:_id",
+      "handler": "Grouppricing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/grouppricing",
+      "handler": "Grouppricing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/grouppricing/:_id",
+      "handler": "Grouppricing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/grouppricing/:_id",
+      "handler": "Grouppricing.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

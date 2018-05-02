@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/outgoingsms",
+      "handler": "Outgoingsms.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/outgoingsms/:_id",
+      "handler": "Outgoingsms.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/outgoingsms",
+      "handler": "Outgoingsms.send",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/outgoingsms/:_id",
+      "handler": "Outgoingsms.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/outgoingsms/:_id",
+      "handler": "Outgoingsms.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
